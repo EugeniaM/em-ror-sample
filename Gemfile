@@ -9,9 +9,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
+gem 'pg', '~> 0.20'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3'
   gem 'rspec-rails'
 end
 
@@ -42,7 +42,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '~> 0.20'
   gem 'rails_12factor'
 end
 # Use Redis adapter to run Action Cable in production
